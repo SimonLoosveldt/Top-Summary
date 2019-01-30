@@ -36,7 +36,13 @@ namespace Overview
             }
             else
             {
-                leiderField.Text = leiderInput.Text;
+                Leider newLeider = new Leider();
+                if (newLeider.NameChecker(leiderInput.Text) == true)
+                {
+                    Leider newLeider = Leider(leiderInput.Text);
+                    leiderField.Text = leiderInput.Text;
+
+                }
             }                      
         }
 

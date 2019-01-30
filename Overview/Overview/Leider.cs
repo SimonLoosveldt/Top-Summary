@@ -10,26 +10,114 @@ namespace Overview
     {
 
         private String naam;
-        private String afdeling;
+        private String afdeling;   
 
-
-
-        public enum Leidsters { HanneVl, Marie, Clémence, Laura, Leni, Hélène, Silke, Leonie, Leontine, HanneVb, Margot, Alexandra, Lotte };
-
-        public Leider (String naam, String afdeling)
+        public enum Afdeling
         {
-            SetNaam(naam);
+            Kabouters,
+            Sloebers,
+            Speelclub_jongens,
+            Speelclub_meisjes,
+            Rakkers,
+            Kwiks,
+            Toppers,
+            Tippers,
+            Kerels,
+            Tiptiens,
+            Aspis,
+            Aspies
+        }
+        public enum Leiding {
+            HanneVl,
+            Marie,
+            Clémence,
+            Laura,
+            Leni,
+            Hélène,
+            Silke,
+            Leonie,
+            Leontine,
+            HanneVb,
+            Margot,
+            Alexandra,
+            Lotte,
+            Robbe,
+            Elias,
+            Louis,
+            Maxim,
+            Lucas,
+            Levi,
+            Robin,
+            Jarne,
+            Arnaud,
+            Axel,
+            Sebastiaan,
+            Arne,
+            Clemens,
+            Rens,
+            Simon
+        };
 
+        public Leider ()
+        {
 
         }
 
-        public void SetNaam(String naam) { this.naam = naam; }
+        public Leider (String naam)
+        {
+            SetNaam(naam);
+            //SetNaam(afdeling);
+
+        }
+
+        public void SetNaam(String naam) // Getter and setter of private field 'naam'
+        {
+            if (NameChecker(naam) == true)
+            {
+                this.naam = naam;
+            }
+        }  
         public String GetNaam() { return this.naam; }
 
-        public void Setafdeling(String naam) { this.naam = naam; }
-        public String Getafdeling() { return this.naam; }
+        /*public void Setafdeling(String afdeling)
+        {
+            if (AfdelingsChecker(afdeling) == true)
+            {
+                this.afdeling = afdeling;
+            }
+        }
+        public String Getafdeling() { return this.naam; }*/
 
+        public bool NameChecker (string name)
+        {
+             foreach (var leiding in Enum.GetValues(typeof(Leiding)))
+            {
+                if (leiding.ToString() == name)
+                {
+                    return true;
+                }
+                else
+                {
+                    break;
+                }   
+            }
+            return false;
+        }
 
-
+        /*public bool AfdelingsChecker(string name)
+        {
+            foreach (var afdeling in Enum.GetValues(typeof(Afdeling)))
+            {
+                if (afdeling.ToString() == name)
+                {
+                    return true;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return false;
+        }     */
     }
 }

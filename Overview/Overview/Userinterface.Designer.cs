@@ -204,7 +204,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(348, 362);
+            this.ClientSize = new System.Drawing.Size(354, 362);
             this.Controls.Add(this.errorTop);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.inputNr3);
