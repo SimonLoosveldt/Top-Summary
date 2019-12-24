@@ -30,6 +30,7 @@ namespace Overview
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            /*
             if (leiderInput.Text == "")
             {
                 errorLeider.Visible = true;
@@ -43,7 +44,8 @@ namespace Overview
                     leiderField.Text = leiderInput.Text;
 
                 }
-            }                      
+            }       
+            */
         }
 
         private void LeiderInput_TextChanged(object sender, EventArgs e)

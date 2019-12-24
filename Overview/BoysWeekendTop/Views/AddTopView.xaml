@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="BoysWeekendTop.Views.AddTopView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BoysWeekendTop.Views"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+            TextElement.FontWeight="Regular"
+            TextElement.FontSize="13"
+            TextOptions.TextFormattingMode="Ideal" 
+            TextOptions.TextRenderingMode="Auto"        
+            Background="{DynamicResource MaterialDesignPaper}"
+            FontFamily="{DynamicResource MaterialDesignFont}"
+            UseLayoutRounding="True">
+    <materialDesign:Card Padding="16">
+        <StackPanel>
+            <TextBlock Text="Voeg toe" Style="{StaticResource MaterialDesignHeadline2TextBlock}" />
+
+            <ComboBox
+                HorizontalAlignment="Left"
+                Width="200"
+                materialDesign:HintAssist.Hint="Leider"
+                SelectedItem="{Binding Top.Boy}"
+                ItemsSource="{Binding Boys}" />
+
+            <ComboBox 
+                HorizontalAlignment="Left"
+                Width="200"
+                materialDesign:HintAssist.Hint="Categorie"
+                ItemsSource="{Binding Categories}"
+                SelectedItem="{Binding Top.Category}" />
+
+            <WrapPanel Margin="0 16 0 0">
+                <Button Content="BEWAREN" Style="{StaticResource MaterialDesignOutlinedButton}" />
+                <Button Margin="8 0 0 0" Command="{Binding CloseCommand}" Content="ANNULEREN" Style="{StaticResource MaterialDesignFlatButton}" />
+            </WrapPanel>
+        </StackPanel>
+    </materialDesign:Card>
+</UserControl>
