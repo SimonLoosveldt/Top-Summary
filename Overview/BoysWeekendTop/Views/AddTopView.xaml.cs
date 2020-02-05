@@ -22,5 +22,7 @@ namespace BoysWeekendTop.Views
         {
             InitializeComponent();
         }
+
+
     }
 }

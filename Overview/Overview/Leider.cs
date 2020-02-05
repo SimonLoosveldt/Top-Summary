@@ -91,7 +91,7 @@ namespace Overview
                 this.afdeling = afdeling;
             }
         }
-        public String Getafdeling() { return this.naam; }*/
+        public String Getafdeling() { return this.naam; }
 
         public bool NameChecker (string name)
         {

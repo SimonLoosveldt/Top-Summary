@@ -8,7 +8,11 @@ namespace BoysWeekendTop.Model
     {
         public enum CategoryType
         {
-            Test
+            onenightstand,
+            relatie,
+            anaal,
+            pijpslet,
+            gangbangslet
         }
 
         public Boy Owner { get; set; }
