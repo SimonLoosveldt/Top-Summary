@@ -28,34 +28,39 @@ namespace Overview
             Aspies
         }
         public enum Leiding {
-            HanneVl,
-            Marie,
-            Clémence,
-            Laura,
-            Leni,
+            Arne,
             Hélène,
             Silke,
-            Leonie,
-            Leontine,
-            HanneVb,
-            Margot,
-            Alexandra,
-            Lotte,
-            Robbe,
-            Elias,
-            Louis,
-            Maxim,
-            Lucas,
-            Levi,
-            Robin,
-            Jarne,
-            Arnaud,
+            Arthur,
             Axel,
-            Sebastiaan,
-            Arne,
+            Mateo,
+            Gil,
+            HanneVb,
+            Marthe,
+            SeppeV,
+            SeppeC,
+            Simon,
+            Stan,
+            Kasper,
+            Alexandra,
+            Margot,
+            Levi,
+            Luka,
+            LauraVh,
+            Maarten,
+            Leni,
+            Luna,
+            HanneVdb,
             Clemens,
-            Rens,
-            Simon
+            Pieter,
+            Viktor,
+            Robin,
+            Leontine,
+            Axelle,
+            Lucas,
+            Robbe,
+            Arnaud,
+            LauraVb
         };
 
         public Leider ()
@@ -79,7 +84,7 @@ namespace Overview
         }  
         public String GetNaam() { return this.naam; }
 
-        /*public void Setafdeling(String afdeling)
+        public void Setafdeling(String afdeling)
         {
             if (AfdelingsChecker(afdeling) == true)
             {
@@ -104,7 +109,7 @@ namespace Overview
             return false;
         }
 
-        /*public bool AfdelingsChecker(string name)
+        public bool AfdelingsChecker(string name)
         {
             foreach (var afdeling in Enum.GetValues(typeof(Afdeling)))
             {
@@ -118,6 +123,6 @@ namespace Overview
                 }
             }
             return false;
-        }     */
+        }     
     }
 }
