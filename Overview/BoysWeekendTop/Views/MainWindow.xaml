@@ -14,7 +14,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         UseLayoutRounding="True"        
-        Title="{Binding Title}" Height="450" Width="800">
+        Title="{Binding Title}" Height="450" Width="800" Loaded="Window_Loaded">
     <materialDesign:DialogHost Identifier="RootDialog">
         <StackPanel Margin="64">
             <TextBlock Text="Boysweekend" Style="{StaticResource MaterialDesignHeadline1TextBlock}" />
